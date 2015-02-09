@@ -1,7 +1,9 @@
 class Plotter
 	constructor: (canvas)->
 		console.log "Plotter#constructor"
-		@canvas = canvas	
+		@canvas = canvas
+		@canvas.width = window.innerWidth
+		@canvas.height = window.innerHeight
 		@context = @canvas.getContext('2d')
 		@context.fillStyle = 'black'
 	plot: (samples)-> # samples should be array of float numbers
