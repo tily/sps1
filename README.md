@@ -2,6 +2,13 @@
 
 ## 20150209mic
 
+* [Web API Interfaces | MDN](https://developer.mozilla.org/en-US/docs/Web/API)
+  * mozilla の html5 っぽいクラスの目次
+* [Web Audio APIでAudioビジュアリゼーションをしてみよう@Homage to Rez - ハードコイルド・ワンダーランド](http://weathercook.hatenadiary.jp/entry/20111207/1323242737)
+  * 早送り/フィルター
+* [Capturing Audio & Video in HTML5 - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/getusermedia/intro/)
+  * getUserMedia に modernizr を使う例がある
+* [Web Audio APIについて（１）「音楽を取得して出力する」 - ハードコイルド・ワンダーランド](http://weathercook.hatenadiary.jp/entry/20111121/1321892542)
 * [thomasboyt/web-audio-recording-demo](https://github.com/thomasboyt/web-audio-recording-demo)
 * [https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/webrtc-integration.html](https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/webrtc-integration.html)
 * 録音せずリアルタイムに波形表示
