@@ -36,7 +36,6 @@ $(document).ready(function() {
   };
   play();
   plot = function() {
-    console.log('plot');
     plotter.clear();
     plotter.plot(data);
     return window.requestAnimationFrame(plot);
