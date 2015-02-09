@@ -25,7 +25,6 @@ $(document).ready ()->
 		source.disconnect()
 	play()
 	plot = ()->
-		console.log 'plot'
 		plotter.clear()
 		plotter.plot data
 		window.requestAnimationFrame(plot)

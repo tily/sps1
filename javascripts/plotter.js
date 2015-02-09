@@ -4,6 +4,8 @@ Plotter = (function() {
   function Plotter(canvas) {
     console.log("Plotter#constructor");
     this.canvas = canvas;
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
     this.context = this.canvas.getContext('2d');
     this.context.fillStyle = 'black';
   }
