@@ -1,5 +1,10 @@
 # memo
 
+## tmp
+
+* decodeAudioData で取得できる AudioBuffer は全データを取得できない？
+  * なんか自分が持ってる mp3 の一部で全データを取得できないっぽかった、他はだいたい全データ取得できる
+
 ## 20150209mic
 
 * [Web API Interfaces | MDN](https://developer.mozilla.org/en-US/docs/Web/API)
@@ -41,3 +46,13 @@
 * mp3/wav 等をアップロードして波形表示
   * 波形だけでなく周波数特性とかも表示
 * jpeg のアルゴリズムで波形つくるやつを音にしたい
+* soundcloud みたいなマーカーで再生
+* 矩形波
+* sin 波のサンプルの一部をランダムに変更してみる
+* エレキギターの音を録音してみたい
+* amen break を使った何か
+  * それぞれのパートに分けてビート検出して鳴らす
+* analyzer 使ってみる
+* 静的な wav を割り当てたのを鳴らす
+  * web midi api 対応
+  * それを波形で表示
