@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sound Programming Study #1</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Sound Programming Study #1</h1>
+			<p>source: <a href="https://github.com/tily/sound-programming-study-1">tily/sound-programming-study-1</a></p>
+			<ul>
+			<% pages.each do |page| %>
+				<li><a href="<%= page[:file] %>"><%= page[:title] %></a> <%= page[:description] %></li>
+			<% end %>
+			</ul>
+		</div>
+	</body>
+</html>
