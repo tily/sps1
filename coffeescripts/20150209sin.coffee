@@ -10,7 +10,7 @@ $(document).ready ()->
 	angle = 2 * Math.PI * 440 / 44100
 	processor.onaudioprocess = (e)->
 		data = e.outputBuffer.getChannelData(0)
-		for i in [0..e.outputBuffer.length]
+		for i in [0...e.outputBuffer.length]
 			data[i] = Math.sin(x)
 			x += angle
 		#console.log 'len ' + data.length + ', max ' + Math.max.apply(Math, data) + ', min ' + Math.min.apply(Math, data)
