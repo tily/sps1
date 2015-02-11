@@ -29,35 +29,45 @@
   * [AudioContext.createScriptProcessor() - Web API Interfaces | MDN](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext.createScriptProcessor)
 * [AudioContext.createScriptProcessor() - Web API Interfaces | MDN](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext.createScriptProcessor)
   * サンプルがノイズを入れるやつ？
-* イヤホンで聴くとノイズみたいのが入っている
+* イヤホンで聴くとノイズみたいのが入っている -【TODO】-
+  * 単にデータ書き出しがバグってただけだった 7e1c3da062e75e80c86b5c5b8809c7c4525aa0f3
+* ほんとにプロットこれであってる？【TODO】
 * plotter の解像度が低い
   * css だけでなく canvas.width, canvas.height に window.innerWidth, window.innerHeight を設定したらうまくいった
     * http://hitode909.appspot.com/js/wav.js 
 
 ## TODO
 
+* 矩形波
+* analyzer のいろいろな機能を使ってみる
+* マルチブラウザ対応
+* 音の録音、できればストレージへ保存
+* dB (デシベル) 表示
+* soundcloud みたいなマーカーで再生
+* 静的な wav (あらかじめ色々な音) を用意しておいて鳴らす
+  * キーボードと Web MIDI API に対応
+  * 波形表示
+  * 適当に身近な音を用意
+* pixel synthesizer
+* midi でピアノを弾くやつ
 * ループシーケンサーを作りたい
   * 何小節かの選択
   * 録音モード
   * 再生モード
 * サンプラーの UI を作りたい
   * 録音(敷居値設定)、波形表示、波形編集(ここからここまでトリム)
-* midi でピアノを弾くやつ
+  * ピーク設定 or 手動で start/stop
+  * 掲示板
 * mp3/wav 等をアップロードして波形表示
   * 波形だけでなく周波数特性とかも表示
 * jpeg のアルゴリズムで波形つくるやつを音にしたい
-* soundcloud みたいなマーカーで再生
-* 矩形波
 * sin 波のサンプルの一部をランダムに変更してみる
 * エレキギターの音を録音してみたい
 * amen break を使った何か
   * それぞれのパートに分けてビート検出して鳴らす
-* analyzer 使ってみる
-* 静的な wav を割り当てたのを鳴らす
-  * web midi api 対応
-  * それを波形で表示
 * 声紋認識
   * 声紋認識でログイン、侵入者はものまねの練習
 * 電話のピポパっていうやつ
 * Raymond Scott
 * スタートレックの船の中で流れてる機材の音
+* やじを集めて再生できるようにしたい
