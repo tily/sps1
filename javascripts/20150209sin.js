@@ -12,7 +12,7 @@ $(document).ready(function() {
     var i, _i, _ref, _results;
     data = e.outputBuffer.getChannelData(0);
     _results = [];
-    for (i = _i = 0, _ref = e.outputBuffer.length; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+    for (i = _i = 0, _ref = e.outputBuffer.length; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
       data[i] = Math.sin(x);
       _results.push(x += angle);
     }
