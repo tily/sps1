@@ -40,4 +40,14 @@ class Default < Thor
 		File.unlink("stylesheets/#{target}.css")
 		system 'thor index'
 	end
+
+	option :commit, :alias => :c, :type => :string
+	desc 'gitadd', 'git add study'
+	def gitadd(target)
+		system "git add #{target}.html"
+		system "git add coffeescripts/#{target}.coffee"
+		system "git add javascripts/#{target}.js"
+		system "git add stylesheets/#{target}.css"
+		system "git commit -m '#{options[:commit]}: #{target}'"
+	end
 end
