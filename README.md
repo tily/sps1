@@ -1,5 +1,10 @@
 # memo
 
+## midi
+
+* http://www.g200kg.com/jp/docs/tech/midi.html
+* http://ja.wikipedia.org/wiki/MIDI
+
 ## tmp
 
 * decodeAudioData で取得できる AudioBuffer は全データを取得できない？
@@ -49,6 +54,7 @@
   * 波形表示
   * 適当に身近な音を用意
 * pixel synthesizer
+* hitode909 さんのやつみたいに何らかのセンサーを sin 波とかに変換するやつ
 * midi でピアノを弾くやつ
 * ループシーケンサーを作りたい
   * 何小節かの選択
@@ -58,6 +64,7 @@
   * 録音(敷居値設定)、波形表示、波形編集(ここからここまでトリム)
   * ピーク設定 or 手動で start/stop
   * 掲示板
+  * YouTube から秒数を指定してオーディオを抜き、サンプラーにセットできるようにしたい
 * mp3/wav 等をアップロードして波形表示
   * 波形だけでなく周波数特性とかも表示
 * jpeg のアルゴリズムで波形つくるやつを音にしたい
@@ -72,3 +79,5 @@
 * スタートレックの船の中で流れてる機材の音
 * やじを集めて再生できるようにしたい
 * 音を綺麗に終わらせる方法
+* サウンドプログラミング入門の全サンプルプログラムを Web Audio API で再現
+* onset detection tutorial の全サンプルプログラムをWeb Audio API で再現
