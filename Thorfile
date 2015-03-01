@@ -8,11 +8,11 @@ class Default < Thor
 		files = Dir['public/*.html']
 		pages = []
 		files.each do |file|
-			if time = file[/^(\d{8})/, 1]
+			if time = file[/(\d{8})/, 1]
 				doc = Nokogiri::HTML(File.read(file))
 				title = doc.xpath('//title').text
 				description = doc.xpath('//meta[@name="description"]').first['content'] rescue nil
-				pages << {title: title, time: time, file: file, description: description}
+				pages << {title: title, time: time, file: file[/public\/(.+)/, 1], description: description}
 			end
 		end
 		html = Erubis::Eruby.new(File.read('templates/index.html.eruby')).result(binding)
