@@ -5,8 +5,8 @@ module.exports = (grunt)->
 				options: {bare: true}
 				bare: true
 				expand: true
-				cwd: 'coffeescripts'
-				src: ['public/coffeescripts/*.coffee']
+				cwd: 'public/coffeescripts'
+				src: ['**/*.coffee']
 				dest: 'public/javascripts'
 				ext: '.js'
 		watch:
