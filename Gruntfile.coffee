@@ -6,12 +6,12 @@ module.exports = (grunt)->
 				bare: true
 				expand: true
 				cwd: 'coffeescripts'
-				src: ['**/*.coffee']
-				dest: 'javascripts'
+				src: ['public/coffeescripts/*.coffee']
+				dest: 'public/javascripts'
 				ext: '.js'
 		watch:
 			app:
-				files: ['coffeescripts/*.coffee']
+				files: ['public/coffeescripts/*.coffee']
 				tasks: 'coffee'
 	grunt.loadNpmTasks('grunt-contrib-coffee')
 	grunt.loadNpmTasks('grunt-contrib-watch')
