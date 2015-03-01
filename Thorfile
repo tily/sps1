@@ -16,7 +16,7 @@ class Default < Thor
 			end
 		end
 		html = Erubis::Eruby.new(File.read('templates/index.html.eruby')).result(binding)
-		File.write('index.html', html)
+		File.write('public/index.html', html)
 	end
 
 	desc 'copy', 'clone one study for new one'
