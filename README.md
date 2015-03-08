@@ -96,3 +96,29 @@
 * 炭坑節
 * Web Audio API の仕様、ぜんぶ読みたい
 * dsp.js のソースコードを読む
+* インタラクティブな canvas の研究
+** https://github.com/bbcrd/peaks.js/blob/master/src/main/waveform/waveform.axis.js
+*** メソッド
+**** roundUpToNearest(ヘルパーメソッドっぽいやつ)
+**** WaveformAxis(コンストラクタ)
+***** 引数に view を受け取り、this に保存してる
+***** ```this.axisShape.setDrawFunc(this.axisDrawFunction.bind(this, view));```
+****** つまり、axisDrawFunction はその場で呼び出すのではなく Kinetic 的な shape に保存されてるっぽい
+**** getAxisLabelScale
+***** this.view から計算してる
+**** axisDrawFunction
+***** ```var axisLabelIntervalSecs = this.getAxisLabelScale();```
+** https://github.com/bbcrd/peaks.js/blob/master/src/main/views/waveform.overview.js
+*** ```that.axis = new WaveformAxis(that);``` している
+** niceTime メソッド (いい感じに時間文字列を整形)
+** waveform.axis クラスは何をやっているのか、どういうインタフェースなのか？
+** 拡大して全サンプルの一部しか表示してないときにも対応してるっぽい
+** ロジックだけ抜き出して実装してみたい【TODO】
+** デシベルメーターで試す【TODO】
+
+oooooooooooooooooo
+||||||||||||||||||  + threshold marker
+8 50 40 30 20 10 0
+
+
+
